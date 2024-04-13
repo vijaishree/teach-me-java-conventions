@@ -1,4 +1,4 @@
-package powerpackage;
+package com.powerpackage;
 
 public class powerFinder {
     public static int of(int xyz, int pqr) {
