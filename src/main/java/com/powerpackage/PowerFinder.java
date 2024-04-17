@@ -1,6 +1,6 @@
 package com.powerpackage;
 
-public class powerFinder {
+public class PowerFinder {
     public static int powerCalculator(int base, int power) {
         int powerValue = 1;
         for (int number = 0; number<power; number++) {
