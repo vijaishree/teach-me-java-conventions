@@ -4,23 +4,33 @@ package com.powerpackage;
 import org.junit.Test;
 
 public class PowerTest {
+    private int base;
+    private int power;
     @Test
     public void oneRaisedToOneIsOne() {
-        assert powerFinder.powerCalculator(1,1) == 1;
+        base =1;
+        power = 1;
+        assert powerFinder.powerCalculator(base,power) == 1;
     }
 
     @Test
     public void twoRaisedToOneIsTwo() {
-        assert powerFinder.powerCalculator(2,1) == 2;
+        base = 2;
+        power = 1;
+        assert powerFinder.powerCalculator(base , power) == 2;
     }
 
     @Test
     public void twoRaisedToTwoIsFour() {
-        assert powerFinder.powerCalculator(2, 2) == 4;
+         base = 2;
+        power = 2;
+        assert powerFinder.powerCalculator(base , power) == 4;
     }
 
     @Test
-    public void ThreeRaisedToTwoIsNine() {
-        assert powerFinder.powerCalculator(3, 2) == 3*3;
+    public void threeRaisedToTwoIsNine() {
+         base = 3;
+        power = 2;
+        assert powerFinder.powerCalculator(base , power) == 9;
     }
 }
